@@ -1,0 +1,572 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/cocon/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineSystem.cmake:200 (message)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      The target system is: Generic -  - 
+      The host system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/cocon/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/cocon/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/cocon/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/msys64/mingw64/bin/avr-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        C:/Users/cocon/Documents/programming/Portfolio/Firmware/HC-SR04/cmake-build-debug/CMakeFiles/4.0.2/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/cocon/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Users/cocon/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/cocon/Documents/programming/Portfolio/Firmware/HC-SR04/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hphyn0"
+      binary: "C:/Users/cocon/Documents/programming/Portfolio/Firmware/HC-SR04/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hphyn0"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/cocon/Documents/programming/Portfolio/Firmware/HC-SR04/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hphyn0'
+        
+        Run Build Command(s): C:/Users/cocon/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_344a4
+        [1/2] C:\\msys64\\mingw64\\bin\\avr-gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_344a4.dir/CMakeCCompilerABI.c.obj -c C:/Users/cocon/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        Reading specs from C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/device-specs/specs-avr2
+        COLLECT_GCC=C:\\msys64\\mingw64\\bin\\avr-gcc.exe
+        Target: avr
+        Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --target=avr --enable-languages=c,c++ --disable-nls --disable-libssp --disable-shared --disable-threads --disable-libgomp --disable-libada --with-dwarf2 --enable-mingw-wildcard
+        Thread model: single
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_344a4.dir/CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles/cmTC_344a4.dir/'
+         C:/msys64/mingw64/bin/../libexec/gcc/avr/15.2.0/cc1.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/ C:/Users/cocon/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCCompilerABI.c -mn-flash=6 -mskip-bug -quiet -dumpdir CMakeFiles/cmTC_344a4.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdouble=32 -mlong-double=64 -version -fdiagnostics-color=always -o C:\\Users\\cocon\\AppData\\Local\\Temp\\cca8xowx.s
+        GNU C23 (GCC) version 15.2.0 (avr)
+        	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/sys-include"
+        ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/avr/15.2.0/include"
+        ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/avr/15.2.0/include-fixed"
+        ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/avr/15.2.0/../../../../avr/sys-include"
+        ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/avr/15.2.0/../../../../avr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/include
+         C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/include-fixed
+         C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/include
+        End of search list.
+        Compiler executable checksum: 064de731fb2cfb15d4d0204b11c57b97
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_344a4.dir/CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles/cmTC_344a4.dir/'
+         C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/bin/as.exe -mmcu=avr2 -mgcc-isr -o CMakeFiles/cmTC_344a4.dir/CMakeCCompilerABI.c.obj C:\\Users\\cocon\\AppData\\Local\\Temp\\cca8xowx.s
+        COMPILER_PATH=C:/msys64/mingw64/bin/../libexec/gcc/avr/15.2.0/;C:/msys64/mingw64/bin/../libexec/gcc/;C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/bin/
+        LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/lib/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_344a4.dir/CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles/cmTC_344a4.dir/CMakeCCompilerABI.c.'\x0d
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\cocon\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E rm -f libcmTC_344a4.a && C:\\msys64\\mingw64\\bin\\avr-ar.exe qc libcmTC_344a4.a  CMakeFiles/cmTC_344a4.dir/CMakeCCompilerABI.c.obj && C:\\msys64\\mingw64\\bin\\avr-ranlib.exe libcmTC_344a4.a && cd ."
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/cocon/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:191 (message)"
+      - "C:/Users/cocon/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/include]
+          add: [C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/include-fixed]
+          add: [C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/include]
+        end of search list found
+        collapse include dir [C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/include] ==> [C:/msys64/mingw64/lib/gcc/avr/15.2.0/include]
+        collapse include dir [C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/include-fixed] ==> [C:/msys64/mingw64/lib/gcc/avr/15.2.0/include-fixed]
+        collapse include dir [C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/include] ==> [C:/msys64/mingw64/avr/include]
+        implicit include dirs: [C:/msys64/mingw64/lib/gcc/avr/15.2.0/include;C:/msys64/mingw64/lib/gcc/avr/15.2.0/include-fixed;C:/msys64/mingw64/avr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/cocon/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeDetermineCompilerABI.cmake:227 (message)"
+      - "C:/Users/cocon/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: 'C:/Users/cocon/Documents/programming/Portfolio/Firmware/HC-SR04/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-hphyn0']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/Users/cocon/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_344a4]
+        ignore line: [[1/2] C:\\msys64\\mingw64\\bin\\avr-gcc.exe   -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_344a4.dir/CMakeCCompilerABI.c.obj -c C:/Users/cocon/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [Reading specs from C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/device-specs/specs-avr2]
+        ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\avr-gcc.exe]
+        ignore line: [Target: avr]
+        ignore line: [Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --target=avr --enable-languages=c c++ --disable-nls --disable-libssp --disable-shared --disable-threads --disable-libgomp --disable-libada --with-dwarf2 --enable-mingw-wildcard]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_344a4.dir/CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles/cmTC_344a4.dir/']
+        ignore line: [ C:/msys64/mingw64/bin/../libexec/gcc/avr/15.2.0/cc1.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/ C:/Users/cocon/AppData/Local/Programs/CLion/bin/cmake/win/x64/share/cmake-4.0/Modules/CMakeCCompilerABI.c -mn-flash=6 -mskip-bug -quiet -dumpdir CMakeFiles/cmTC_344a4.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdouble=32 -mlong-double=64 -version -fdiagnostics-color=always -o C:\\Users\\cocon\\AppData\\Local\\Temp\\cca8xowx.s]
+        ignore line: [GNU C23 (GCC) version 15.2.0 (avr)]
+        ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/sys-include"]
+        ignore line: [ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/avr/15.2.0/include"]
+        ignore line: [ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/avr/15.2.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/avr/15.2.0/../../../../avr/sys-include"]
+        ignore line: [ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/avr/15.2.0/../../../../avr/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/include]
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/include-fixed]
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 064de731fb2cfb15d4d0204b11c57b97]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_344a4.dir/CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles/cmTC_344a4.dir/']
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/bin/as.exe -mmcu=avr2 -mgcc-isr -o CMakeFiles/cmTC_344a4.dir/CMakeCCompilerABI.c.obj C:\\Users\\cocon\\AppData\\Local\\Temp\\cca8xowx.s]
+        ignore line: [COMPILER_PATH=C:/msys64/mingw64/bin/../libexec/gcc/avr/15.2.0/]
+        ignore line: [C:/msys64/mingw64/bin/../libexec/gcc/]
+        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/bin/]
+        ignore line: [LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/]
+        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/]
+        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-o' 'CMakeFiles/cmTC_344a4.dir/CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles/cmTC_344a4.dir/CMakeCCompilerABI.c.'\x0d]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\Users\\cocon\\AppData\\Local\\Programs\\CLion\\bin\\cmake\\win\\x64\\bin\\cmake.exe -E rm -f libcmTC_344a4.a && C:\\msys64\\mingw64\\bin\\avr-ar.exe qc libcmTC_344a4.a  CMakeFiles/cmTC_344a4.dir/CMakeCCompilerABI.c.obj && C:\\msys64\\mingw64\\bin\\avr-ranlib.exe libcmTC_344a4.a && cd ."]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineSystem.cmake:207 (message)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      The target system is: Generic -  - 
+      The host system is: Windows - 10.0.26100 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompiler.cmake:115 (find_program)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:67 (_cmake_find_compiler_path)"
+      - "CMakeLists.txt:10 (project)"
+    mode: "program"
+    variable: "CMAKE_C_COMPILER_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "avr-gcc"
+    candidate_directories:
+      - "C:/mingw64/bin/"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Go/bin/"
+      - "C:/Program Files/Git LFS/"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/PuTTY/"
+      - "C:/Program Files (x86)/cloudflared/"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/"
+      - "C:/Program Files/Neovim/bin/"
+      - "C:/msys64/ucrt64/bin/"
+      - "C:/Users/cocon/.cargo/bin/"
+      - "C:/Users/cocon/AppData/Local/Programs/Python/Python314/"
+      - "C:/Users/cocon/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/"
+      - "C:/Users/cocon/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/serial/"
+      - "C:/Program Files/Bochs-3.0/"
+      - "C:/i686-elf-tools-windows/bin/"
+      - "C:/i686-elf-tools-windows/i686-elf/bin/"
+      - "C:/msys64/mingw64/bin/"
+      - "C:/msys64/mingw64/include/"
+      - "C:/Users/cocon/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/cocon/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/Users/cocon/go/bin/"
+      - "C:/Program Files/JetBrains/IntelliJ IDEA Community Edition 2025.2/bin/"
+      - "C:/Users/cocon/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/cocon/AppData/Local/bin/NASM/"
+      - "C:/Accessories/"
+      - "C:/sqlite/"
+      - "C:/apache-maven-3.9.11/bin/"
+      - "C:/Program Files/qemu/"
+    searched_directories:
+      - "C:/mingw64/bin/avr-gcc.com"
+      - "C:/mingw64/bin/avr-gcc.exe"
+      - "C:/mingw64/bin/avr-gcc"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/avr-gcc.com"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/avr-gcc.exe"
+      - "C:/Program Files/Common Files/Oracle/Java/javapath/avr-gcc"
+      - "C:/Windows/System32/avr-gcc.com"
+      - "C:/Windows/System32/avr-gcc.exe"
+      - "C:/Windows/System32/avr-gcc"
+      - "C:/Windows/avr-gcc.com"
+      - "C:/Windows/avr-gcc.exe"
+      - "C:/Windows/avr-gcc"
+      - "C:/Windows/System32/wbem/avr-gcc.com"
+      - "C:/Windows/System32/wbem/avr-gcc.exe"
+      - "C:/Windows/System32/wbem/avr-gcc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/avr-gcc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/avr-gcc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/avr-gcc"
+      - "C:/Windows/System32/OpenSSH/avr-gcc.com"
+      - "C:/Windows/System32/OpenSSH/avr-gcc.exe"
+      - "C:/Windows/System32/OpenSSH/avr-gcc"
+      - "C:/Program Files/Git/cmd/avr-gcc.com"
+      - "C:/Program Files/Git/cmd/avr-gcc.exe"
+      - "C:/Program Files/Git/cmd/avr-gcc"
+      - "C:/Program Files/Go/bin/avr-gcc.com"
+      - "C:/Program Files/Go/bin/avr-gcc.exe"
+      - "C:/Program Files/Go/bin/avr-gcc"
+      - "C:/Program Files/Git LFS/avr-gcc.com"
+      - "C:/Program Files/Git LFS/avr-gcc.exe"
+      - "C:/Program Files/Git LFS/avr-gcc"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/avr-gcc.com"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/avr-gcc.exe"
+      - "C:/Program Files/NVIDIA Corporation/NVIDIA App/NvDLISR/avr-gcc"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/avr-gcc.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/avr-gcc.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/avr-gcc"
+      - "C:/Program Files/PuTTY/avr-gcc.com"
+      - "C:/Program Files/PuTTY/avr-gcc.exe"
+      - "C:/Program Files/PuTTY/avr-gcc"
+      - "C:/Program Files (x86)/cloudflared/avr-gcc.com"
+      - "C:/Program Files (x86)/cloudflared/avr-gcc.exe"
+      - "C:/Program Files (x86)/cloudflared/avr-gcc"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/avr-gcc.com"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/avr-gcc.exe"
+      - "C:/Program Files (x86)/NVIDIA Corporation/PhysX/Common/avr-gcc"
+      - "C:/Program Files/Neovim/bin/avr-gcc.com"
+      - "C:/Program Files/Neovim/bin/avr-gcc.exe"
+      - "C:/Program Files/Neovim/bin/avr-gcc"
+      - "C:/msys64/ucrt64/bin/avr-gcc.com"
+      - "C:/msys64/ucrt64/bin/avr-gcc.exe"
+      - "C:/msys64/ucrt64/bin/avr-gcc"
+      - "C:/Users/cocon/.cargo/bin/avr-gcc.com"
+      - "C:/Users/cocon/.cargo/bin/avr-gcc.exe"
+      - "C:/Users/cocon/.cargo/bin/avr-gcc"
+      - "C:/Users/cocon/AppData/Local/Programs/Python/Python314/avr-gcc.com"
+      - "C:/Users/cocon/AppData/Local/Programs/Python/Python314/avr-gcc.exe"
+      - "C:/Users/cocon/AppData/Local/Programs/Python/Python314/avr-gcc"
+      - "C:/Users/cocon/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/avr-gcc.com"
+      - "C:/Users/cocon/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/avr-gcc.exe"
+      - "C:/Users/cocon/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/Scripts/avr-gcc"
+      - "C:/Users/cocon/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/serial/avr-gcc.com"
+      - "C:/Users/cocon/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/serial/avr-gcc.exe"
+      - "C:/Users/cocon/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/serial/avr-gcc"
+      - "C:/Program Files/Bochs-3.0/avr-gcc.com"
+      - "C:/Program Files/Bochs-3.0/avr-gcc.exe"
+      - "C:/Program Files/Bochs-3.0/avr-gcc"
+      - "C:/i686-elf-tools-windows/bin/avr-gcc.com"
+      - "C:/i686-elf-tools-windows/bin/avr-gcc.exe"
+      - "C:/i686-elf-tools-windows/bin/avr-gcc"
+      - "C:/i686-elf-tools-windows/i686-elf/bin/avr-gcc.com"
+      - "C:/i686-elf-tools-windows/i686-elf/bin/avr-gcc.exe"
+      - "C:/i686-elf-tools-windows/i686-elf/bin/avr-gcc"
+      - "C:/msys64/mingw64/bin/avr-gcc.com"
+    found: "C:/msys64/mingw64/bin/avr-gcc.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\mingw64\\bin\\"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\Git LFS"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files (x86)\\cloudflared\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Neovim\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\cocon\\.cargo\\bin"
+        - "C:\\Users\\cocon\\AppData\\Local\\Programs\\Python\\Python314"
+        - "C:\\Users\\cocon\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\Scripts"
+        - "C:\\Users\\cocon\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\serial"
+        - "C:\\Program Files\\Bochs-3.0"
+        - "C:\\i686-elf-tools-windows\\bin"
+        - "C:\\i686-elf-tools-windows\\i686-elf\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\include\\"
+        - "C:\\Users\\cocon\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\cocon\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\cocon\\go\\bin"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2025.2\\bin"
+        - "C:\\Users\\cocon\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\cocon\\AppData\\Local\\bin\\NASM"
+        - "C:\\Accessories"
+        - "C:\\sqlite"
+        - "C:\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\qemu"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/HC-SR04"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/msys64/mingw64/share/cmake/Modules/"
+    found: "C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\mingw64\\bin\\"
+        - "C:\\Program Files\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Go\\bin"
+        - "C:\\Program Files\\Git LFS"
+        - "C:\\Program Files\\NVIDIA Corporation\\NVIDIA App\\NvDLISR"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\PuTTY\\"
+        - "C:\\Program Files (x86)\\cloudflared\\"
+        - "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common"
+        - "C:\\Program Files\\Neovim\\bin"
+        - "C:\\msys64\\ucrt64\\bin"
+        - "C:\\Users\\cocon\\.cargo\\bin"
+        - "C:\\Users\\cocon\\AppData\\Local\\Programs\\Python\\Python314"
+        - "C:\\Users\\cocon\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\Scripts"
+        - "C:\\Users\\cocon\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\serial"
+        - "C:\\Program Files\\Bochs-3.0"
+        - "C:\\i686-elf-tools-windows\\bin"
+        - "C:\\i686-elf-tools-windows\\i686-elf\\bin"
+        - "C:\\msys64\\mingw64\\bin"
+        - "C:\\msys64\\mingw64\\include\\"
+        - "C:\\Users\\cocon\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\cocon\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\cocon\\go\\bin"
+        - "C:\\Program Files\\JetBrains\\IntelliJ IDEA Community Edition 2025.2\\bin"
+        - "C:\\Users\\cocon\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\cocon\\AppData\\Local\\bin\\NASM"
+        - "C:\\Accessories"
+        - "C:\\sqlite"
+        - "C:\\apache-maven-3.9.11\\bin"
+        - "C:\\Program Files\\qemu"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/HC-SR04"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: C:/msys64/mingw64/bin/avr-gcc.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        C:/Users/cocon/Documents/programming/Portfolio/Firmware/HC-SR04/cmake-build-debug/CMakeFiles/4.1.2/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/cocon/Documents/programming/Portfolio/Firmware/HC-SR04/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-c4ujt7"
+      binary: "C:/Users/cocon/Documents/programming/Portfolio/Firmware/HC-SR04/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-c4ujt7"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/cocon/Documents/programming/Portfolio/Firmware/HC-SR04/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-c4ujt7'
+        
+        Run Build Command(s): C:/Users/cocon/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_87e07
+        [1/2] C:\\msys64\\mingw64\\bin\\avr-gcc.exe   -v -o CMakeFiles/cmTC_87e07.dir/CMakeCCompilerABI.c.obj -c C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        Reading specs from C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/device-specs/specs-avr2
+        COLLECT_GCC=C:\\msys64\\mingw64\\bin\\avr-gcc.exe
+        Target: avr
+        Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --target=avr --enable-languages=c,c++ --disable-nls --disable-libssp --disable-shared --disable-threads --disable-libgomp --disable-libada --with-dwarf2 --enable-mingw-wildcard
+        Thread model: single
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 15.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_87e07.dir/CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles/cmTC_87e07.dir/'
+         C:/msys64/mingw64/bin/../libexec/gcc/avr/15.2.0/cc1.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/ C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c -mn-flash=6 -mskip-bug -quiet -dumpdir CMakeFiles/cmTC_87e07.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdouble=32 -mlong-double=64 -version -o C:\\Users\\cocon\\AppData\\Local\\Temp\\ccia10TY.s
+        GNU C23 (GCC) version 15.2.0 (avr)
+        	compiled by GNU C version 15.2.0, GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/sys-include"
+        ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/avr/15.2.0/include"
+        ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/avr/15.2.0/include-fixed"
+        ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/avr/15.2.0/../../../../avr/sys-include"
+        ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/avr/15.2.0/../../../../avr/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/include
+         C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/include-fixed
+         C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/include
+        End of search list.
+        Compiler executable checksum: 064de731fb2cfb15d4d0204b11c57b97
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_87e07.dir/CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles/cmTC_87e07.dir/'
+         C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/bin/as.exe -mmcu=avr2 -mgcc-isr -o CMakeFiles/cmTC_87e07.dir/CMakeCCompilerABI.c.obj C:\\Users\\cocon\\AppData\\Local\\Temp\\ccia10TY.s
+        COMPILER_PATH=C:/msys64/mingw64/bin/../libexec/gcc/avr/15.2.0/;C:/msys64/mingw64/bin/../libexec/gcc/;C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/bin/
+        LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/;C:/msys64/mingw64/bin/../lib/gcc/;C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_87e07.dir/CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles/cmTC_87e07.dir/CMakeCCompilerABI.c.'\x0d
+        [2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\mingw64\\bin\\cmake.exe -E rm -f libcmTC_87e07.a && C:\\msys64\\mingw64\\bin\\avr-ar.exe qc libcmTC_87e07.a  CMakeFiles/cmTC_87e07.dir/CMakeCCompilerABI.c.obj && C:\\msys64\\mingw64\\bin\\avr-ranlib.exe libcmTC_87e07.a && cd ."
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/include]
+          add: [C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/include-fixed]
+          add: [C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/include]
+        end of search list found
+        collapse include dir [C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/include] ==> [C:/msys64/mingw64/lib/gcc/avr/15.2.0/include]
+        collapse include dir [C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/include-fixed] ==> [C:/msys64/mingw64/lib/gcc/avr/15.2.0/include-fixed]
+        collapse include dir [C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/include] ==> [C:/msys64/mingw64/avr/include]
+        implicit include dirs: [C:/msys64/mingw64/lib/gcc/avr/15.2.0/include;C:/msys64/mingw64/lib/gcc/avr/15.2.0/include-fixed;C:/msys64/mingw64/avr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/msys64/mingw64/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:10 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: 'C:/Users/cocon/Documents/programming/Portfolio/Firmware/HC-SR04/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-c4ujt7']
+        ignore line: []
+        ignore line: [Run Build Command(s): C:/Users/cocon/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe -v cmTC_87e07]
+        ignore line: [[1/2] C:\\msys64\\mingw64\\bin\\avr-gcc.exe   -v -o CMakeFiles/cmTC_87e07.dir/CMakeCCompilerABI.c.obj -c C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [Reading specs from C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/device-specs/specs-avr2]
+        ignore line: [COLLECT_GCC=C:\\msys64\\mingw64\\bin\\avr-gcc.exe]
+        ignore line: [Target: avr]
+        ignore line: [Configured with: ../gcc-15.2.0/configure --prefix=/mingw64 --target=avr --enable-languages=c c++ --disable-nls --disable-libssp --disable-shared --disable-threads --disable-libgomp --disable-libada --with-dwarf2 --enable-mingw-wildcard]
+        ignore line: [Thread model: single]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 15.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_87e07.dir/CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles/cmTC_87e07.dir/']
+        ignore line: [ C:/msys64/mingw64/bin/../libexec/gcc/avr/15.2.0/cc1.exe -quiet -v -iprefix C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/ C:/msys64/mingw64/share/cmake/Modules/CMakeCCompilerABI.c -mn-flash=6 -mskip-bug -quiet -dumpdir CMakeFiles/cmTC_87e07.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdouble=32 -mlong-double=64 -version -o C:\\Users\\cocon\\AppData\\Local\\Temp\\ccia10TY.s]
+        ignore line: [GNU C23 (GCC) version 15.2.0 (avr)]
+        ignore line: [	compiled by GNU C version 15.2.0  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.3.1  isl version isl-0.27-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/sys-include"]
+        ignore line: [ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/avr/15.2.0/include"]
+        ignore line: [ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/avr/15.2.0/include-fixed"]
+        ignore line: [ignoring nonexistent directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/avr/15.2.0/../../../../avr/sys-include"]
+        ignore line: [ignoring duplicate directory "C:/msys64/mingw64/lib/gcc/../../lib/gcc/avr/15.2.0/../../../../avr/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/include]
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/include-fixed]
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 064de731fb2cfb15d4d0204b11c57b97]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_87e07.dir/CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles/cmTC_87e07.dir/']
+        ignore line: [ C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/bin/as.exe -mmcu=avr2 -mgcc-isr -o CMakeFiles/cmTC_87e07.dir/CMakeCCompilerABI.c.obj C:\\Users\\cocon\\AppData\\Local\\Temp\\ccia10TY.s]
+        ignore line: [COMPILER_PATH=C:/msys64/mingw64/bin/../libexec/gcc/avr/15.2.0/]
+        ignore line: [C:/msys64/mingw64/bin/../libexec/gcc/]
+        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/bin/]
+        ignore line: [LIBRARY_PATH=C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/]
+        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/]
+        ignore line: [C:/msys64/mingw64/bin/../lib/gcc/avr/15.2.0/../../../../avr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_87e07.dir/CMakeCCompilerABI.c.obj' '-c' '-mdouble=32' '-mlong-double=64' '-specs=device-specs/specs-avr2' '-dumpdir' 'CMakeFiles/cmTC_87e07.dir/CMakeCCompilerABI.c.'\x0d]
+        ignore line: [[2/2] C:\\WINDOWS\\system32\\cmd.exe /C "cd . && C:\\msys64\\mingw64\\bin\\cmake.exe -E rm -f libcmTC_87e07.a && C:\\msys64\\mingw64\\bin\\avr-ar.exe qc libcmTC_87e07.a  CMakeFiles/cmTC_87e07.dir/CMakeCCompilerABI.c.obj && C:\\msys64\\mingw64\\bin\\avr-ranlib.exe libcmTC_87e07.a && cd ."]
+        ignore line: []
+        ignore line: []
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+...

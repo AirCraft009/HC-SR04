@@ -29,24 +29,41 @@
 
 #define CHECK_PIN_VALIDITY(p) (p > 13)
 
-#define SET_DATA_DIRECTION_WRITE(p) \
-((p) <= 7 ? (DDRD |= (1U << (p))) : (DDRB |= (1U << ((p) - 8))))
+#define GET_DATA_DIRECTION_REGISTER(p) \
+((p) <= 7 ? &DDRD : &DDRB)
 
-#define SET_DATA_DIRECTION_READ(p) \
-((p) <= 7 ? (DDRD &= ~(1U << (p))) : (DDRB &= ~(1U << ((p) - 8))))
+#define SET_DATA_DIRECTION_WRITE(reg, pNum) \
+(reg |= (1U << (pNum)))
+
+#define SET_DATA_DIRECTION_READ(reg, pNum) \
+(reg &= ~(1U << (pNum)))
 
 #define CONVERT_NUM_TO_PORT(n)\
-    ((n) <= 7 ? &PORTD : &PORTB)
+((n) <= 7 ? &PORTD : &PORTB)
 
 #define CONVERT_NUM_TO_PIN(n)\
-    ((n) <= 7 ? &PIND : &PINB)
+((n) <= 7 ? &PIND : &PINB)
 
-# define EMPTY_PIN {0,0,0}
+# define EMPTY_PIN {0,0,0,0}
+
+#define SET_PULL_UP(port, pNum)\
+(port |= (1U << pNum))
+
+#define SET_PULL_DOWN(port, pNum)\
+(port &= ~(1U << pNum))
+
+#define GET_PCIE_BIT(portPtr)\
+((*portPtr == (PORTB))? PCIE0 : PCIE2)
+
+#define GET_INTERRUPT_MASK(portPtr)\
+((*portPtr == (PORTB)) ? &PCMSK0 : &PCMSK2)
+
 
 typedef struct Pin {
     uint8_t PinNumber;
     bool write;
     volatile uint8_t *port;
+    volatile uint8_t *dataDirReg;
 }Pin;
 
 
@@ -54,3 +71,5 @@ typedef struct Pin {
 
 int SetPin(Pin * pin, int PinNumber, bool write);
 int DigitalWrite(const Pin * p, int value);
+int DigitalRead(const Pin *p);
+void InitPCINT(const Pin *p);

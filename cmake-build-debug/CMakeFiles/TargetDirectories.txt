@@ -1,0 +1,4 @@
+C:/Users/cocon/Documents/programming/Portfolio/Firmware/HC-SR04/cmake-build-debug/CMakeFiles/HC-SR04.elf.dir
+C:/Users/cocon/Documents/programming/Portfolio/Firmware/HC-SR04/cmake-build-debug/CMakeFiles/flash.dir
+C:/Users/cocon/Documents/programming/Portfolio/Firmware/HC-SR04/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/cocon/Documents/programming/Portfolio/Firmware/HC-SR04/cmake-build-debug/CMakeFiles/rebuild_cache.dir
