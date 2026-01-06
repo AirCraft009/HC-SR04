@@ -4,17 +4,18 @@
 
 #define GET_CM_FROM_US(t) (t/58)
 #define GET_IN_FROM_US(t) (t/148)
+#define
 
 #endif // HC_SR04_LIBRARY_H
 
 int sendPulse(void);
 
-typedef struct ControlState {
+typedef struct HC_SR04 {
     Pin Trig;
     Pin Echo;
     // in mikrosec
     uint64_t measureStart;
     uint64_t measureEnd;
-}ControlState;
+}HC_SR04;
 
-extern ControlState control;
+

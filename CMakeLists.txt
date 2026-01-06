@@ -13,8 +13,8 @@ set(MCU atmega328p)
 set(F_CPU 16000000UL)
 
 add_executable(HC-SR04.elf
-        src/main.c
-        src/main.h
+        src/HCSR04.c
+        src/HCSR04.h
         include/Pin.h
         include/Pin.c
 )

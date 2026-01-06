@@ -1,18 +1,16 @@
-#include "main.h"
+#include "HCSR04.h"
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <util/delay.h>
 
-
-ControlState control = {EMPTY_PIN, EMPTY_PIN, 0, 0};
 volatile uint64_t time_mircoS = 0;
 Pin sig = EMPTY_PIN;
 
-void setPins(int trigPin, int echoPin) {
+void setPins(int trigPin, int echoPin, HC_SR04 hcSR04) {
     // currently just accepts all pins but will control in future
 
-    SetPin(&control.Trig, trigPin, true);
-    SetPin(&control.Echo, echoPin, false);
+    SetPin(&hcSR04.Trig, trigPin, true);
+    SetPin(&hcSR04.Echo, echoPin, false);
 } 
 
 /**
@@ -24,9 +22,10 @@ void setPins(int trigPin, int echoPin) {
  * @param gndPin Gnd Pin
  * @param VccPin A 5.5V VCC pin
  */
-void InitHC_SR04(int trigPin, int echoPin) {
-    setPins(trigPin, echoPin);
-    sei();
+HC_SR04 CreateHC_SR04(int trigPin, int echoPin) {
+    HC_SR04 hc_sr04 = {EMPTY_PIN, EMPTY_PIN, 0, 0};
+    setPins(trigPin, echoPin, hc_sr04);
+    return hc_sr04;
 }
 
 // triggers on TCNT1 == OCR1A
@@ -55,25 +54,28 @@ uint32_t micros() {
     return t;
 }
 
-void trigger() {
-    DigitalWrite(&control.Trig, HIGH);
-    DigitalWrite(&control.Trig, LOW);
-    control.measureStart = micros();
+void trigger(HC_SR04 *hc_sr04) {
+    DigitalWrite(&hc_sr04->Trig, HIGH);
+    DigitalWrite(&hc_sr04->Trig, LOW);
+    hc_sr04->measureEnd = micros();
 }
 
 
 // ISR for PORTD == PORTB
 ISR(PCINT2_vect, ISR_ALIASOF(PCINT0_vect));
 ISR(PCINT0_vect) {
-    control.measureEnd = micros();
+    /*
+     *get what pin triggered
+     */
+    measureEnd = micros();
     DigitalWrite(&sig, LOW);
 }
 
-uint64_t measure() {
+uint64_t measure(HC_SR04 *hc_sr04) {
     sei();
-    trigger();
+    trigger(hc_sr04);
     //make measure blocking
-    while (control.measureStart < );
+    return GET_CM_FROM_US(hc_sr04->measureEnd-hc_sr04->measureStart);
 }
 
 

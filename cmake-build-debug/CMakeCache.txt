@@ -27,6 +27,9 @@ CMAKE_BUILD_TYPE:STRING=Debug
 //Enable colored diagnostics throughout.
 CMAKE_COLOR_DIAGNOSTICS:BOOL=ON
 
+//C compiler
+CMAKE_C_COMPILER:STRING=C:/msys64/mingw64/bin/avr-gcc.exe
+
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
 CMAKE_C_COMPILER_AR:FILEPATH=C:/msys64/mingw64/bin/avr-gcc-ar.exe
@@ -111,9 +114,6 @@ CMAKE_NM:FILEPATH=C:/msys64/mingw64/bin/avr-nm.exe
 
 //Path to a program.
 CMAKE_OBJDUMP:FILEPATH=C:/msys64/mingw64/bin/avr-objdump.exe
-
-//Value Computed by CMake
-CMAKE_PROJECT_COMPAT_VERSION:STATIC=
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -221,6 +221,8 @@ CMAKE_COMMAND:INTERNAL=C:/Users/cocon/AppData/Local/Programs/CLion/bin/cmake/win
 CMAKE_CPACK_COMMAND:INTERNAL=C:/Users/cocon/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/cpack.exe
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=C:/Users/cocon/AppData/Local/Programs/CLion/bin/cmake/win/x64/bin/ctest.exe
+//ADVANCED property for variable: CMAKE_C_COMPILER
+CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_AR
 CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_RANLIB
