@@ -1,8 +1,8 @@
 # ninja log v6
-2	62	7893455495559212	CMakeFiles/HC-SR04.elf.dir/src/main.c.obj	3725e475998140f3
 62	134	7893455496160991	HC-SR04.elf	40eb889efdcf0ca1
 5	68	7893440843765039	CMakeFiles/HC-SR04.elf.dir/include/Pin.c.obj	2047062f05b3a44c
 1	1837	7893455625133395	CMakeFiles/flash	dd1c1ca898eece85
-1	164	7894398366387065	C:/Users/cocon/Documents/programming/Portfolio/Firmware/HC-SR04/cmake-build-debug/cmake_install.cmake	512d9f849a209f28
-1	164	7894398366432703	build.ninja	512d9f849a209f28
+1	164	7896189335769844	C:/Users/cocon/Documents/programming/Portfolio/Firmware/HC-SR04/cmake-build-debug/cmake_install.cmake	512d9f849a209f28
+1	164	7896189335830118	build.ninja	512d9f849a209f28
 1	1837	7893455625133395	C:/Users/cocon/Documents/programming/Portfolio/Firmware/HC-SR04/cmake-build-debug/CMakeFiles/flash	dd1c1ca898eece85
+5	214	7896191293582029	CMakeFiles/HC-SR04.elf.dir/include/Pin.c.obj	2047062f05b3a44c

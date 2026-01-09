@@ -11,21 +11,23 @@ void setPins(int trigPin, int echoPin, HC_SR04 hcSR04) {
 
     SetPin(&hcSR04.Trig, trigPin, true);
     SetPin(&hcSR04.Echo, echoPin, false);
-} 
+}
 
 /**
  *
- * Inits the internal state of the HC-SR04
- *
- * @param trigPin Normal IO pin
- * @param echoPin Normal IO pin
- * @param gndPin Gnd Pin
- * @param VccPin A 5.5V VCC pin
+ * @param trigPin GPIO pin
+ * @param echoPin GPIO pin
+ * @return -1 if unable to register sensor due to too many being in use else position of the sensor
  */
-HC_SR04 CreateHC_SR04(int trigPin, int echoPin) {
-    HC_SR04 hc_sr04 = {EMPTY_PIN, EMPTY_PIN, 0, 0};
+int registerHC_SR04(int trigPin, int echoPin) {
+    if (hc_sr04Ptr >= MaxSensors) {
+        return -1;
+    }
+    HC_SR04 hc_sr04 = EMPTY_HC_SR04;
     setPins(trigPin, echoPin, hc_sr04);
-    return hc_sr04;
+    hc_sr04Sensors[hc_sr04Ptr] = hc_sr04;
+    hc_sr04Ptr++;
+    return hc_sr04Ptr-1;
 }
 
 // triggers on TCNT1 == OCR1A
@@ -46,6 +48,8 @@ void initTimer1() {
     sei();
 }
 
+
+
 uint32_t micros() {
     uint32_t t;
     cli();
@@ -54,10 +58,20 @@ uint32_t micros() {
     return t;
 }
 
-void trigger(HC_SR04 *hc_sr04) {
-    DigitalWrite(&hc_sr04->Trig, HIGH);
-    DigitalWrite(&hc_sr04->Trig, LOW);
-    hc_sr04->measureEnd = micros();
+/**
+ *
+ * @param index index of the sensor passed back from RegisterHc_SR04
+ * @return 1 - invalid index
+ */
+int trigger(int index) {
+    if (index >= hc_sr04Ptr) {
+        return 1;
+    }
+    DigitalWrite(&hc_sr04Sensors[index].Trig, HIGH);
+    _delay_us(10);
+    DigitalWrite(&hc_sr04Sensors[index].Trig, LOW);
+    hc_sr04Sensors[index].measureStart = micros();
+    return 0;
 }
 
 
@@ -67,15 +81,16 @@ ISR(PCINT0_vect) {
     /*
      *get what pin triggered
      */
-    measureEnd = micros();
     DigitalWrite(&sig, LOW);
 }
 
-uint64_t measure(HC_SR04 *hc_sr04) {
+uint64_t measure(int index) {
     sei();
-    trigger(hc_sr04);
+    if (trigger(index) == 1) {
+        return 0;
+    }
     //make measure blocking
-    return GET_CM_FROM_US(hc_sr04->measureEnd-hc_sr04->measureStart);
+    return GET_CM_FROM_US(hc_sr04Sensors[index].measureEnd - hc_sr04Sensors[index].measureStart);
 }
 
 
